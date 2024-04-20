@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        
+        .chat-container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .chat-box {
+            height: 300px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .message-form {
+            display: flex;
+        }
+        
+        .message-form input[type="text"] {
+            flex: 1;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+        }
+        
+        .message-form button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        .message-container {
+            margin-bottom: 10px;
+        }
+        
+        .user-message {
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 8px;
+            padding: 8px 12px;
+            max-width: 70%;
+            word-wrap: break-word;
+            margin-left: auto;
+        }
+        
+        .bot-message {
+            background-color: #f0f0f0;
+            color: #333;
+            border-radius: 8px;
+            padding: 8px 12px;
+            max-width: 70%;
+            word-wrap: break-word;
+            margin-right: auto;
+        }        
+    </style>
+</head>
+<body>
+    <script>
+        document.getElementById('message-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var userInput = document.getElementById('user-input').value;
+            var chatBox = document.getElementById('chat-box');
+        
+            if (userInput.trim() === '') {
+                return;
+            }
+        
+            var userMessageContainer = document.createElement('div');
+            userMessageContainer.classList.add('message-container');
+            var userMessage = document.createElement('div');
+            userMessage.classList.add('user-message');
+            userMessage.textContent = userInput;
+            userMessageContainer.appendChild(userMessage);
+            chatBox.appendChild(userMessageContainer);
+        
+            document.getElementById('message-form').reset();
+        
+            // Send user message to PHP for processing
+            var formData = new FormData();
+            formData.append('user-input', userInput);
+        
+            fetch('chat.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(data => {
+                var botMessageContainer = document.createElement('div');
+                botMessageContainer.classList.add('message-container');
+                var botMessage = document.createElement('div');
+                botMessage.classList.add('bot-message');
+                botMessage.innerHTML = data;
+                botMessageContainer.appendChild(botMessage);
+                chatBox.appendChild(botMessageContainer);
+        
+                chatBox.scrollTop = chatBox.scrollHeight; // Scroll to bottom
+            })
+            .catch(error => console.error('Error:', error));
+        });
+        
+    </script>
+    <div class="chat-container">
+        <div class="chat-box" id="chat-box">
+            <!-- Chat messages will be displayed here -->
+        </div>
+        <form id="message-form" class="message-form" method="POST" action="chat.php">
+            <input type="text" id="user-input" name="user-input" placeholder="Type a message...">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

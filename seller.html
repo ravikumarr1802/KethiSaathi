@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#69ea6b;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 18px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f1f6f0;
+            text-align: left;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="number"] {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seller Information Form</h1>
+    <form action="success.html">
+        <table>
+            <tr>
+                <th colspan="2">Seller Information</th>
+            </tr>
+            <tr>
+                <td><label for="full_name">Full Name:</label></td>
+                <td><input type="text" id="full_name" name="full_name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone Number:</label></td>
+                <td><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required></td>
+            </tr>
+            <tr>
+                <td><label for="company_name">Company Name:</label></td>
+                <td><input type="text" id="company_name" name="company_name" required></td>
+            </tr>
+            <tr>
+                <td><label for="product_category">Product Category:</label></td>
+                <td><input type="text" id="product_category" name="product_category" required></td>
+            </tr>
+            <tr>
+                <td><label for="product_description">Product Description:</label></td>
+                <td><textarea id="product_description" name="product_description" rows="4" required></textarea></td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit Listing">
+    </form>
+</body>
+</html>

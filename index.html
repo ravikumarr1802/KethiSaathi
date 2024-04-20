@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Kethi Saathi-- VIVITSU</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;400;700&display=swap" rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/templatemo-festava-live.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .scheme-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            width: 1000px;
+            height: 350px;
+        }
+        .scheme-container:hover {
+            transform: scale(1.1);
+            box-shadow: 5px 5px 10px 10px rgb(145, 238, 5);
+        }
+        .scheme-details {
+            flex: 1;
+        }
+        h2 {
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 5px;
+        }
+    </style>
+
+    <!--
+
+TemplateMo 583 Festava Live
+
+https://templatemo.com/tm-583-festava-live
+
+-->
+</head>
+
+<body>
+
+    <main>
+
+        <header class="site-header">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 d-flex flex-wrap">
+                        <p class="d-flex me-4 mb-0">
+                            <i class="bi-person custom-icon me-2"></i>
+                            <strong class="text-dark">Welcome to Kheti Saathi</strong>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    KHETI SAATHI
+                </a>
+
+                <a href="ticket.html" class="btn custom-btn d-lg-none ms-auto me-4">Buy Ticket</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav align-items-lg-center ms-auto me-lg-5">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_1">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_2">Buyer & Seller</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_3">Schemes</a>
+                        </li>
+
+                        <li>
+                            <a href="#section_4"><select id="Services" style="color:white;background-color: transparent; border: none; outline: none;" onchange="redirectToPage(this)">
+                                <option style="color:black" value="">Services</option>
+                                <option style="color:black" value="cp.html">Crop Prediction</option>
+                                <option style="color:black" value="cd.html">Crop Disease Detection</option>
+                                <option style="color:black" value="bs.html">Buffer Stock Management</option>
+                              </select></a>
+                        </li>
+                    </ul>
+
+                    <a href="chat.html" class="btn custom-btn smoothscroll">Chat</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <section class="hero-section" id="section_1">
+            <div class="section-overlay"></div>
+
+            <div class="container d-flex justify-content-center align-items-center">
+                <div style="height: 200px;" class="row">
+
+                    <div class="col-12 mt-auto mb-5 text-center">
+
+                        <h1 class="text-white mb-5">FARMING 
+                            IS NOT 
+                            JUST A JOB 
+                            IT’S A
+                            WAY OF LIFE 
+                            </h1>
+
+                        <a class="btn custom-btn smoothscroll" href="#section_2">Let's begin</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-wrap">
+                <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                    <source src="video/home video.mp4" type="video/mp4">
+
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+
+        <section class="about-section section-padding" id="section_2">
+            <div class="container">
+                <div class="row">
+                    <div class="container" style="max-width: 400px; margin: 0 auto; text-align: center;">
+                        <div class="buttons">
+                            <table style="padding: 2px;">
+                                <tr>
+                                    <td style="font-size:32px;padding-bottom:10px;">Explore as Buyer:</td>
+                                    <td style="padding-bottom: 10px;"><a class="btn custom-btn smoothscroll" href="buyer.html">Buyer</a></td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size:32px;padding-top: 10px;text-align:left">Explore as Seller:</td>
+                                    <td style="padding-top: 10px;"><a class="btn custom-btn smoothscroll" href="seller.html">Seller</a></td>
+                                </tr>
+                            </table>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="artists-section section-padding" id="section_3">
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <div class="col-12 text-center">
+                        <h2 class="mb-4">Government Schemes</h1>
+                    </div>
+                    <center>
+                        <div class="scheme-container">
+                            <div class="scheme-details">
+                                <h2>Pradhan Mantri Kisan Samman Nidhi (<a href="https://pmkisan.gov.in/">PM-Kisan</a>)</h2>
+                                <p><strong>Description:</strong> PM-Kisan provides income support to small and marginal farmers by offering direct income support of ₹6,000 per year in three installments.</p>
+                                <p><strong>Eligibility Criteria:</strong> All small and marginal farmers owning cultivable land are eligible.</p>
+                                <p><strong>Application Deadline:</strong> Continuous support, no specific deadline.</p>
+                            </div>
+                        </div>
+                        <div class="scheme-container">
+                            <div class="scheme-details">
+                                <h2>Pradhan Mantri Fasal Bima Yojana (<a href="https://www.pmfby.gov.in/">PMFBY</a>)</h2>
+                                <p><strong>Description:</strong> PMFBY is an insurance scheme that provides financial assistance to farmers in case of crop failure due to natural calamities, pests, or diseases.</p>
+                                <p><strong>Eligibility Criteria:</strong> All farmers, including tenant farmers, sharecroppers, and landless agricultural laborers, are eligible to enroll in PMFBY.</p>
+                                <p><strong>Application Deadline:</strong> Varies based on crop season and region.</p>
+                            </div>
+                        </div>
+                        <div class="scheme-container">
+                            <div class="scheme-details">
+                                <h2>Soil Health Card Scheme(<a href="https://soilhealth.dac.gov.in/home">SHC</a>)</h2>
+                                <p><strong>Description:</strong> The Soil Health Card Scheme provides farmers with soil health cards containing information about soil health and recommendations for improving fertility.</p>
+                                <p><strong>Eligibility Criteria:</strong> All farmers are eligible to receive soil health cards.</p>
+                                <p><strong>Application Deadline:</strong> Continuous issuance, no specific deadline.</p>
+                            </div>
+                        </div>
+                        <div class="scheme-container">
+                            <div class="scheme-details">
+                                <h2>Pradhan Mantri Krishi Sinchayee Yojana (<a href="https://pmksy.gov.in/">PMKSY</a>)</h2>
+                                <p><strong>Description:</strong> PMKSY aims to improve water use efficiency in agriculture through watershed development, micro-irrigation, and water-saving technologies.</p>
+                                <p><strong>Eligibility Criteria:</strong> All farmers and agricultural stakeholders can participate in PMKSY.</p>
+                                <p><strong>Application Deadline:</strong> Varies based on project timelines.</p>
+                            </div>
+                        </div>
+                        <div class="scheme-container">
+                            <div class="scheme-details">
+                                <h2>Kisan Credit Card (<a href="https://www.myscheme.gov.in/schemes/kcc">KCC</a>) Scheme</h2>
+                                <p><strong>Description:</strong> The KCC scheme provides farmers with access to credit for agricultural and allied activities.</p>
+                                <p><strong>Eligibility Criteria:</strong> Farmers who own cultivable land and have a good credit history are eligible for KCC.</p>
+                                <p><strong>Application Deadline:</strong> Ongoing, no specific deadline.</p>
+                            </div>
+                        </div>
+                        <div class="scheme-container">
+                            <div class="scheme-details">
+                                <h2>Rashtriya Krishi Vikas Yojana (<a href="https://rkvy.nic.in/">RKVY</a>)</h2>
+                                <p><strong>Description:</strong> RKVY provides financial assistance to states for implementing projects related to agriculture and rural development.</p>
+                                <p><strong>Eligibility Criteria:</strong> State governments can apply for RKVY funding for approved projects.</p>
+                                <p><strong>Application Deadline:</strong> Varies based on project timelines.</p>
+                            </div>
+                        </div>
+                        <div class="scheme-container">
+                            <div class="scheme-details">
+                                <h2>Paramparagat Krishi Vikas Yojana (<a href="https://dmsouthwest.delhi.gov.in/scheme/paramparagat-krishi-vikas-yojana/">PKVY</a>)</h2>
+                                <p><strong>Description:</strong> PKVY promotes organic farming practices among farmers through financial assistance and certification support.</p>
+                                <p><strong>Eligibility Criteria:</strong> Farmers practicing organic farming or willing to adopt organic farming methods are eligible for PKVY.</p>
+                                <p><strong>Application Deadline:</strong> Varies based on project timelines.</p>
+                            </div>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="site-footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12">
+                        <h2 class="text-white mb-lg-0">Kethi Saathi</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-12 mb-4 pb-2">
+                    <h5 class="site-footer-title mb-3">Links</h5>
+
+                    <ul class="site-footer-links">
+                        <li class="site-footer-link-item">
+                            <a href="#section_1" class="site-footer-link">Home</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#section_2" class="site-footer-link">Buyer & Seller</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#section_3" class="site-footer-link">Schemes</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                    <h5 class="site-footer-title mb-3">Have a question?</h5>
+
+                    <p class="text-white d-flex mb-1">
+                        <a href="tel: 090-080-0760" class="site-footer-link">
+                            994-983-1228
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <a href="mailto:hello@company.com" class="site-footer-link">
+                            kethisaathi@gmail.com
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-11 mb-4 mb-lg-0 mb-md-0">
+                    <h5 class="site-footer-title mb-3">Location</h5>
+
+                    <p class="text-white d-flex mt-3 mb-2">
+                        Gokaraju Rangaraju Institute of Engineering and Technology, Nizampet, Hyderabad</p>
+
+                    <a class="link-fx-1 color-contrast-higher mt-3" href="#">
+                        <span>Our Maps</span>
+                        <svg class="icon" viewBox="0 0 32 32" aria-hidden="true">
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="16" cy="16" r="15.5"></circle>
+                                <line x1="10" y1="18" x2="16" y2="12"></line>
+                                <line x1="16" y1="12" x2="22" y2="18"></line>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer-bottom">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-12 mt-5">
+                        <p class="copyright-text">Copyright © 2024 Kethi Saathi</p>
+                    </div>
+
+                    <div class="col-lg-8 col-12 mt-lg-5">
+                        <ul class="site-footer-links">
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link"></a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link"></a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--
+
+T e m p l a t e M o
+
+-->
+
+    <!-- JAVASCRIPT FILES -->
+    <script>
+        function redirectToPage(selectElement) {
+          var selectedValue = selectElement.value;
+          if (selectedValue) {
+            window.location.href = selectedValue;
+          }
+        }
+      </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/click-scroll.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
