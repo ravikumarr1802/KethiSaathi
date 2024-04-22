@@ -1,0 +1,1 @@
+Its a project based on modernising the agriculture by providing a platform directly where buyer and sellers(farmers) interact without any 3rd party involvment and helping them in various stages like crop recommnedation,crop predicition and buffer stock mangaement
