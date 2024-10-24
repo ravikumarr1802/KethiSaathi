@@ -7,3 +7,4 @@ Welcome to KethiSaathi, your ultimate companion for modern farming! This web app
   Disease Prediction: Utilize advanced algorithms to identify potential diseases in crops and receive actionable solutions.
   Market Insights: Access real-time data on market prices and demand to make informed decisions.
   Community Support: Connect with fellow farmers to share experiences, tips, and advice.
+  <a href="https://ravikumarr1802.github.io/KethiSaathi/">Click Here.🔗</a>
